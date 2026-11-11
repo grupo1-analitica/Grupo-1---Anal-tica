@@ -29,6 +29,8 @@ Visualización del proyecto
 <img width="893" height="403" alt="image" src="https://github.com/user-attachments/assets/652009c4-9fd0-4f64-bfcc-6faaba72430d" />
 <img width="892" height="385" alt="image" src="https://github.com/user-attachments/assets/dfc189a1-8fcd-4459-9dd3-5d005d57cb1a" />
 <img width="899" height="414" alt="image" src="https://github.com/user-attachments/assets/6f9ed778-5f99-4310-b00a-6eb9fb8b8c0e" />
+<img width="898" height="408" alt="image" src="https://github.com/user-attachments/assets/4568b085-deeb-4a57-ab43-4d1dd50cb7c5" />
+<img width="869" height="362" alt="image" src="https://github.com/user-attachments/assets/b8097fb0-a13a-446c-b49e-843158cbadff" />
 
 
 
