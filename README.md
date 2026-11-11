@@ -1,4 +1,3 @@
-# Grupo-1 Analítica
 # Grupo 01: INDICADOR MENSUAL DE CALIDAD DE SERVICIO
 
 ## Descripción general
@@ -19,7 +18,7 @@ Desarrollar un reporte interactivo que permita realizar el seguimiento mensual d
 
 **Diseño ejecutivo:** Presentación visual orientada a facilitar la lectura de los indicadores y proporcionar una experiencia de navegación intuitiva.
 
-# Visualización del proyecto
+## Visualización del proyecto
 <img width="896" height="415" alt="image" src="https://github.com/user-attachments/assets/c472ce0d-b7d0-42e1-bb63-fc6280807f7e" />
 <img width="896" height="415" alt="image" src="https://github.com/user-attachments/assets/0408ef19-8a40-423e-bf3f-989a20ece31e" />
 <img width="895" height="413" alt="image" src="https://github.com/user-attachments/assets/edbb9274-f774-4e59-a565-f5d184f2e37e" />
