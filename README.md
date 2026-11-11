@@ -43,6 +43,11 @@ Visualización del proyecto
 <img width="889" height="407" alt="image" src="https://github.com/user-attachments/assets/47c3e6b6-2c14-4aff-8149-f0ce80a7d0c6" />
 <img width="890" height="409" alt="image" src="https://github.com/user-attachments/assets/29b9f162-4c63-4e82-aece-adfd96c1acb2" />
 <img width="879" height="398" alt="image" src="https://github.com/user-attachments/assets/41517b25-34ea-4d44-b797-ff04cad0d302" />
+<img width="881" height="393" alt="image" src="https://github.com/user-attachments/assets/1d55f8f9-3be0-4ab3-b6d1-80814641352a" />
+<img width="887" height="405" alt="image" src="https://github.com/user-attachments/assets/ecced1aa-8923-42ab-b0a0-6af6d357a22d" />
+<img width="887" height="386" alt="image" src="https://github.com/user-attachments/assets/4e376ab1-7a1d-4bfc-bb65-cf3fbbed627c" />
+<img width="890" height="400" alt="image" src="https://github.com/user-attachments/assets/14ba4696-f9cf-4979-a123-8330098f07b5" />
+<img width="884" height="396" alt="image" src="https://github.com/user-attachments/assets/c4ae012a-a668-46ef-9445-09c5b357d3f9" />
 
 
 
