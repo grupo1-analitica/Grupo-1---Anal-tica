@@ -1,25 +1,25 @@
 # Grupo-1 Analítica
-Grupo 01: INDICADOR MENSUAL DE CALIDAD DE SERVICIO
+# Grupo 01: INDICADOR MENSUAL DE CALIDAD DE SERVICIO
 
-Descripción general
+## Descripción general
 
 Los dashboards desarrollados en Power BI permiten transformar grandes volúmenes de información en reportes visuales e interactivos que facilitan el análisis y la interpretación de los resultados. Su diseño busca proporcionar una visión ejecutiva de los indicadores mediante una presentación ordenada, intuitiva y visualmente clara, contribuyendo a identificar tendencias y respaldar la toma de decisiones.
 
-Objetivo del proyecto
+## Objetivo del proyecto
 
 Desarrollar un reporte interactivo que permita realizar el seguimiento mensual del Indicador de Calidad de Servicio para clientes desertores de una empresa del sector de telecomunicaciones en Perú.
 
-Principales características
+## Principales características
 
-Storytelling con datos: Organización de la información mediante una secuencia visual estructurada que facilita la comprensión de los resultados, relacionando los indicadores con los principales hallazgos del análisis.
+**Storytelling con datos:** Organización de la información mediante una secuencia visual estructurada que facilita la comprensión de los resultados, relacionando los indicadores con los principales hallazgos del análisis.
 
-Análisis de indicadores: Seguimiento del comportamiento mensual del Indicador de Calidad de Servicio para clientes desertores, facilitando la identificación de variaciones y tendencias.
+**Análisis de indicadores:** Seguimiento del comportamiento mensual del Indicador de Calidad de Servicio para clientes desertores, facilitando la identificación de variaciones y tendencias.
 
-Filtros dinámicos e interacción cruzada: Navegación interactiva mediante filtros por periodos, sedes y otros criterios disponibles, permitiendo profundizar en diferentes dimensiones del análisis.
+**Filtros dinámicos e interacción cruzada:** Navegación interactiva mediante filtros por periodos, sedes y otros criterios disponibles, permitiendo profundizar en diferentes dimensiones del análisis.
 
-Diseño ejecutivo: Presentación visual orientada a facilitar la lectura de los indicadores y proporcionar una experiencia de navegación intuitiva.
+**Diseño ejecutivo:** Presentación visual orientada a facilitar la lectura de los indicadores y proporcionar una experiencia de navegación intuitiva.
 
-Visualización del proyecto
+# Visualización del proyecto
 <img width="896" height="415" alt="image" src="https://github.com/user-attachments/assets/c472ce0d-b7d0-42e1-bb63-fc6280807f7e" />
 <img width="896" height="415" alt="image" src="https://github.com/user-attachments/assets/0408ef19-8a40-423e-bf3f-989a20ece31e" />
 <img width="895" height="413" alt="image" src="https://github.com/user-attachments/assets/edbb9274-f774-4e59-a565-f5d184f2e37e" />
@@ -50,6 +50,9 @@ Visualización del proyecto
 <img width="884" height="396" alt="image" src="https://github.com/user-attachments/assets/c4ae012a-a668-46ef-9445-09c5b357d3f9" />
 <img width="884" height="414" alt="image" src="https://github.com/user-attachments/assets/45d5b101-f4d6-4b54-bc65-2261414d21ad" />
 <img width="887" height="418" alt="image" src="https://github.com/user-attachments/assets/9fe4821f-7d43-4391-8d7a-8dea55b6db78" />
+<img width="887" height="306" alt="image" src="https://github.com/user-attachments/assets/11edd3f0-f97d-4aec-b301-20927a816f2a" />
+<img width="880" height="389" alt="image" src="https://github.com/user-attachments/assets/2d3e17b1-f182-4422-bcaf-7d28ff4b9693" />
+<img width="889" height="398" alt="image" src="https://github.com/user-attachments/assets/03943ff0-6955-4a3e-8abd-4760003a06ee" />
 
 
 
