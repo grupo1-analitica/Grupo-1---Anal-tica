@@ -20,14 +20,20 @@ Filtros dinámicos e interacción cruzada: Navegación interactiva mediante filt
 Diseño ejecutivo: Presentación visual orientada a facilitar la lectura de los indicadores y proporcionar una experiencia de navegación intuitiva.
 
 Visualización del proyecto
-<img width="899" height="474" alt="image" src="https://github.com/user-attachments/assets/a1a6bd3c-af77-41fe-b4e2-bbc5123bd580" />
+<img width="896" height="415" alt="image" src="https://github.com/user-attachments/assets/c472ce0d-b7d0-42e1-bb63-fc6280807f7e" />
+<img width="896" height="415" alt="image" src="https://github.com/user-attachments/assets/0408ef19-8a40-423e-bf3f-989a20ece31e" />
+<img width="895" height="413" alt="image" src="https://github.com/user-attachments/assets/edbb9274-f774-4e59-a565-f5d184f2e37e" />
+<img width="897" height="386" alt="image" src="https://github.com/user-attachments/assets/403bb684-8a09-42ad-b9b5-e36b7d6001bc" />
+<img width="888" height="410" alt="image" src="https://github.com/user-attachments/assets/6895bd05-e1ca-4556-af8d-c982f6fe4682" />
+<img width="892" height="397" alt="image" src="https://github.com/user-attachments/assets/d7716f6e-5c0c-43d5-b3e7-3eff3446eef1" />
+<img width="893" height="403" alt="image" src="https://github.com/user-attachments/assets/652009c4-9fd0-4f64-bfcc-6faaba72430d" />
+<img width="892" height="385" alt="image" src="https://github.com/user-attachments/assets/dfc189a1-8fcd-4459-9dd3-5d005d57cb1a" />
+<img width="899" height="414" alt="image" src="https://github.com/user-attachments/assets/6f9ed778-5f99-4310-b00a-6eb9fb8b8c0e" />
+<img width="899" height="414" alt="image" src="https://github.com/user-attachments/assets/f3e670f2-1980-4aa7-8618-70a8f2ea90ca" />
 
-<img width="806" height="439" alt="image" src="https://github.com/user-attachments/assets/a215d348-e1d2-4d2a-bcfb-4a308a03032d" />
-<img width="748" height="458" alt="image" src="https://github.com/user-attachments/assets/1fc4460a-7a60-4f17-8608-bb989fcd28e0" />
-<img width="769" height="381" alt="image" src="https://github.com/user-attachments/assets/fd2614c8-3583-49cf-9436-a52102eea3b4" />
-<img width="723" height="451" alt="image" src="https://github.com/user-attachments/assets/d0727150-d05d-4153-b980-04357c126075" />
-<img width="776" height="446" alt="image" src="https://github.com/user-attachments/assets/574630ed-1b81-4e0a-8d1b-b2ad5af09ce8" />
-<img width="626" height="485" alt="image" src="https://github.com/user-attachments/assets/aa02cd6b-a36f-40b3-a0ae-51013b383c9d" />
+
+
+
 
 
 
