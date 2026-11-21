@@ -20,7 +20,8 @@ Desarrollar un reporte interactivo que permita realizar el seguimiento mensual d
 
 ## Visualización del proyecto
 <img width="896" height="415" alt="image" src="https://github.com/user-attachments/assets/c472ce0d-b7d0-42e1-bb63-fc6280807f7e" />
-<img width="896" height="415" alt="image" src="https://github.com/user-attachments/assets/0408ef19-8a40-423e-bf3f-989a20ece31e" />
+<img width="896" height="415" alt="image" src="https://github.com/user-attachments/assets/<img width="759" height="325" alt="image" src="https://github.com/user-attachments/assets/74f7d9c3-f48d-4697-b57c-acd11a9a7316" />
+0408ef19-8a40-423e-bf3f-989a20ece31e" />
 <img width="895" height="413" alt="image" src="https://github.com/user-attachments/assets/edbb9274-f774-4e59-a565-f5d184f2e37e" />
 <img width="897" height="386" alt="image" src="https://github.com/user-attachments/assets/403bb684-8a09-42ad-b9b5-e36b7d6001bc" />
 <img width="888" height="410" alt="image" src="https://github.com/user-attachments/assets/6895bd05-e1ca-4556-af8d-c982f6fe4682" />
@@ -41,3 +42,15 @@ Desarrollar un reporte interactivo que permita realizar el seguimiento mensual d
 <img width="869" height="331" alt="image" src="https://github.com/user-attachments/assets/6d80b9c7-a7d3-42ac-88fb-e06e66f8c3d0" />
 <img width="808" height="306" alt="image" src="https://github.com/user-attachments/assets/ff89dd7f-201c-4411-a663-7b075f1234ab" />
 <img width="743" height="326" alt="image" src="https://github.com/user-attachments/assets/83e89975-5db4-4288-a5cc-6ea70d22ad89" />
+<img width="869" height="337" alt="image" src="https://github.com/user-attachments/assets/24b18a3b-a3e8-4b55-92d3-4e579d0dc02c" />
+<img width="840" height="328" alt="image" src="https://github.com/user-attachments/assets/50647130-137a-4c6d-a5cb-c905127e92f9" />
+<img width="811" height="336" alt="image" src="https://github.com/user-attachments/assets/71f974af-c8a8-486c-be47-b34165a4bfc4" />
+<img width="820" height="326" alt="image" src="https://github.com/user-attachments/assets/c60e53c6-05a7-4cd4-8483-e0673d749a57" />
+<img width="866" height="334" alt="image" src="https://github.com/user-attachments/assets/95e27ee9-b9ac-427e-bf6e-b2e320044577" />
+<img width="868" height="362" alt="image" src="https://github.com/user-attachments/assets/c495fcfc-04c7-4ed5-b2eb-96c2047632cd" />
+<img width="782" height="328" alt="image" src="https://github.com/user-attachments/assets/d01231b9-1538-42b8-8a6d-cd657ef8dc22" />
+<img width="797" height="322" alt="image" src="https://github.com/user-attachments/assets/83f97673-6bc6-40fe-aab7-1c0a4307572f" />
+<img width="788" height="326" alt="image" src="https://github.com/user-attachments/assets/130f97b8-3322-4810-a99e-f2d2fed6b942" />
+<img width="789" height="326" alt="image" src="https://github.com/user-attachments/assets/d5792bbb-2999-4db9-a14a-d08ce062bb30" />
+
+
