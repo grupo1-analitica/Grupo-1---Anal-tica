@@ -32,4 +32,12 @@ Desarrollar un reporte interactivo que permita realizar el seguimiento mensual d
 <img width="864" height="365" alt="image" src="https://github.com/user-attachments/assets/54bca9ab-40e2-4b02-9dab-c820a4c63133" />
 <img width="830" height="324" alt="image" src="https://github.com/user-attachments/assets/0340c2c9-2002-4333-a6b4-f09e31002102" />
 <img width="797" height="329" alt="image" src="https://github.com/user-attachments/assets/987f40df-ceaa-4b82-a271-783162d534fb" />
-<img width="797" height="329" alt="image" src="https://github.com/user-attachments/assets/c690720b-65ad-46fe-8711-1985c21f6274" />
+<img width="857" height="355" alt="image" src="https://github.com/user-attachments/assets/651fff14-ee5c-42a7-9838-330b9034a952" />
+<img width="876" height="387" alt="image" src="https://github.com/user-attachments/assets/2a4786ba-0c42-4e0b-9698-276146ecad90" />
+<img width="861" height="314" alt="image" src="https://github.com/user-attachments/assets/8f068e28-34b5-48cf-86f2-f5a93dae15d1" />
+<img width="799" height="324" alt="image" src="https://github.com/user-attachments/assets/6898cc91-e6bd-4b89-8d31-c0f3930b38bf" />
+<img width="778" height="323" alt="image" src="https://github.com/user-attachments/assets/f5897e29-2226-43e6-82d4-e859a9a191f1" />
+<img width="869" height="350" alt="image" src="https://github.com/user-attachments/assets/68a2cca5-afec-488b-bc15-6a007cff19f6" />
+<img width="869" height="331" alt="image" src="https://github.com/user-attachments/assets/6d80b9c7-a7d3-42ac-88fb-e06e66f8c3d0" />
+<img width="808" height="306" alt="image" src="https://github.com/user-attachments/assets/ff89dd7f-201c-4411-a663-7b075f1234ab" />
+<img width="743" height="326" alt="image" src="https://github.com/user-attachments/assets/83e89975-5db4-4288-a5cc-6ea70d22ad89" />
