@@ -65,5 +65,8 @@ Desarrollar un reporte interactivo que permita realizar el seguimiento mensual d
 <img width="870" height="329" alt="image" src="https://github.com/user-attachments/assets/b4f74c1a-40ab-458f-98bd-1b2ea7a28937" />
 <img width="748" height="325" alt="image" src="https://github.com/user-attachments/assets/98e069ba-3e97-4346-8938-7129eb39e805" />
 <img width="763" height="259" alt="image" src="https://github.com/user-attachments/assets/4037a045-7698-4aba-81a1-f9d1d7de2db0" />
+<img width="857" height="328" alt="image" src="https://github.com/user-attachments/assets/d9d33111-8481-4772-8a53-7b00418afaf4" />
+<img width="869" height="368" alt="image" src="https://github.com/user-attachments/assets/3972d1ad-bf90-44b1-872a-0efae79438f2" />
+<img width="809" height="320" alt="image" src="https://github.com/user-attachments/assets/2ae6452b-48ad-47bf-bec7-5019537a8e9e" />
 
 
