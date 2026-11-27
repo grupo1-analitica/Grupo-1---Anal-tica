@@ -1,0 +1,13 @@
+{% extends "base.html" %}{% block c %}
+<h2>⏳ Esperando aprobación…</h2>
+<p id="t">Ya avisamos al equipo del Grupo 1. Mantén esta ventana abierta: entrarás automáticamente cuando aprueben tu acceso (puede tardar unos minutos).</p>
+<script>
+const t=document.getElementById('t');
+async function q(){try{const r=await fetch("{{ url_for('invitado_estado') }}",{cache:'no-store'});const e=(await r.json()).estado;
+if(e==='aprobada'){location="{{ url_for('invitado_entrar') }}";return}
+if(e==='rechazada'){t.textContent='❌ Tu solicitud fue rechazada.';return}
+if(e==='expirada'||e==='invalida'||e==='usada'){t.innerHTML='La solicitud venció. <a href="{{ url_for('invitado') }}">Solicitar de nuevo</a>';return}}catch(x){}
+setTimeout(q,3000)}
+q();
+</script>
+{% endblock %}

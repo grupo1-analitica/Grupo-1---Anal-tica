@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block c %}
+<h2>Usuarios</h2><p><a class="btn" href="{{ url_for('usuario_form') }}">+ Nuevo usuario</a> <a class="btn" href="{{ url_for('inicio') }}">Volver al inicio</a> <a class="btn" href="{{ url_for('solicitudes') }}">🔔 Solicitudes de invitados</a></p>
+<table><tr><th>Usuario</th><th>Nombre</th><th>Correo</th><th>Rol</th><th>Activo</th><th></th></tr>
+{% for r in rows %}<tr><td>{{ r.usuario }}</td><td>{{ r.nombre }}</td><td>{{ r.correo or '' }}</td><td>{{ r.rol }}</td><td>{{ 'Sí' if r.activo else 'No' }}</td>
+<td><a class="btn" href="{{ url_for('usuario_form', id=r.usuario_id) }}">Editar</a></td></tr>{% endfor %}</table>{% endblock %}

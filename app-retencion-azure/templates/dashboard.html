@@ -1,0 +1,23 @@
+{% extends "base.html" %}{% block c %}
+<h2>Dashboard de retención</h2>
+{% if session.rol != 'invitado' %}<p><a class="btn" href="{{ url_for('reporte_vista_interactiva') }}" target="_blank">📊 Ver reporte interactivo</a> <a class="btn" href="{{ url_for('reporte_vista') }}" target="_blank">👁️ Ver reporte por correo</a>
+{% if session.rol == 'administrador' %}<form method="post" action="{{ url_for('reporte_enviar_ahora') }}" style="display:inline"><input type="hidden" name="_csrf" value="{{ csrf() }}"><button class="btn" type="submit">✉️ Enviar reporte ahora</button></form>{% endif %}</p>{% else %}<p class="msg ok">👀 Estás como invitado: acceso de solo lectura.</p>{% endif %}
+<div class="cards">
+<div class="kpi"><small>Clientes</small><b>{{ '{:,}'.format(k.clientes) }}</b></div>
+<div class="kpi"><small>Contratos activos</small><b>{{ '{:,}'.format(k.activos) }}</b></div>
+<div class="kpi"><small>Contratos cancelados</small><b>{{ '{:,}'.format(k.cancelados) }}</b></div>
+<div class="kpi"><small>Tasa de cancelación</small><b>{{ k.tasa }}%</b></div>
+<div class="kpi"><small>Intervenciones</small><b>{{ '{:,}'.format(k.intervenciones) }}</b></div>
+<div class="kpi"><small>Calificación promedio</small><b>{{ k.calificacion }}</b></div></div>
+<div class="grid2">
+<div class="graf"><h3>Bajas por motivo</h3><canvas id="c1"></canvas></div>
+<div class="graf"><h3>Intervenciones por resultado</h3><canvas id="c2"></canvas></div>
+<div class="graf"><h3>Intervenciones por canal</h3><canvas id="c3"></canvas></div>
+<div class="graf"><h3>Bajas por mes (últimos 12 con datos)</h3><canvas id="c4"></canvas></div></div>
+<p><a class="btn" href="{{ url_for('inicio') }}">Volver al inicio</a></p>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+const D={{ d|tojson }},col=['#1f7aec','#0b3d6b','#f5a623','#e5484d','#2fb67c','#8e6cf0'];
+function g(id,t,k,l){new Chart(document.getElementById(id),{type:t,data:{labels:D[k].map(x=>x[0]),datasets:[{label:l,data:D[k].map(x=>x[1]),backgroundColor:t=='line'?'#1f7aec33':col,borderColor:'#1f7aec',fill:t=='line',tension:.3}]},options:{plugins:{legend:{display:t=='doughnut'}}}})}
+g('c1','bar','motivos','Bajas');g('c2','doughnut','resultados','Intervenciones');g('c3','bar','canales','Intervenciones');g('c4','line','meses','Bajas');
+</script>{% endblock %}

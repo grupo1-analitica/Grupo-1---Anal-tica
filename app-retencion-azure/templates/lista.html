@@ -1,0 +1,14 @@
+{% extends "base.html" %}{% block c %}
+<h2>{{ e.t }} <small style="font-weight:normal;font-size:14px">({{ total }} registros)</small></h2>
+<form method="get"><input name="q" value="{{ q }}" placeholder="Buscar..." style="width:260px"> <button class="btn">Buscar</button>
+{% if ed %}<a class="btn" href="{{ url_for('form', ent=ent) }}">+ Nuevo</a>{% endif %} <a class="btn" href="{{ url_for('inicio') }}">Volver al inicio</a></form><br>
+<div style="overflow-x:auto"><table><tr><th>ID</th>{% for c in e.campos %}<th>{{ c.l }}</th>{% endfor %}{% for x in e.extra %}<th>{{ x[1] }}</th>{% endfor %}<th></th></tr>
+{% for r in rows %}<tr><td>{{ r[e.pk] }}</td>{% for c in e.campos %}<td>{{ r[c.n] if r[c.n] is not none else '' }}</td>{% endfor %}
+{% for x in e.extra %}<td>{{ r[x[0]] if r[x[0]] is not none else '' }}</td>{% endfor %}
+<td style="white-space:nowrap">{% if ed %}<a class="btn" href="{{ url_for('form', ent=ent, id=r[e.pk]) }}">Editar</a>{% endif %}
+{% if el %}<form class="inline" method="post" action="{{ url_for('eliminar', ent=ent, id=r[e.pk]) }}" onsubmit="return confirm('¿Eliminar este registro?')"><input type="hidden" name="_csrf" value="{{ csrf() }}"><button class="btn rojo">Eliminar</button></form>{% endif %}</td></tr>
+{% else %}<tr><td colspan="20">Sin resultados</td></tr>{% endfor %}</table></div>
+<p>Página {{ pg }} de {{ pages }}
+{% if pg > 1 %}<a class="btn" href="{{ url_for('lista', ent=ent, q=q, p=pg-1) }}">Anterior</a>{% endif %}
+{% if pg < pages %}<a class="btn" href="{{ url_for('lista', ent=ent, q=q, p=pg+1) }}">Siguiente</a>{% endif %}</p>
+{% endblock %}
