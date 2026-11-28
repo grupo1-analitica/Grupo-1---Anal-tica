@@ -1,0 +1,7 @@
+{% extends "base.html" %}{% block c %}
+<h2>Configuración inicial</h2><p>Crea el primer administrador. El código de instalación es el valor de la variable SETUP_CODE.</p>
+<form method="post" style="max-width:420px"><input type="hidden" name="_csrf" value="{{ csrf() }}">
+<label>Código de instalación</label><input name="codigo" type="password" required>
+<label>Usuario</label><input name="usuario" required><label>Nombre completo</label><input name="nombre" required>
+<label>Correo (para los reportes)</label><input name="correo" type="email"><label>Clave (mínimo 8 caracteres)</label><input name="clave" type="password" minlength="8" required>
+<br><br><button class="btn">Crear administrador</button></form>{% endblock %}

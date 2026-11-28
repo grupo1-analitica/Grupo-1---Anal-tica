@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% block c %}
+<h2>Mi cuenta · cambiar clave</h2>
+{% if session.dc %}<p class="msg err">Entraste con la clave que te dio la administradora. Elige tu propia clave para continuar.</p>{% endif %}
+<form method="post" style="max-width:340px"><input type="hidden" name="_csrf" value="{{ csrf() }}">
+<label>Clave actual</label><input name="actual" type="password" required autocomplete="current-password">
+<label>Clave nueva (mínimo 8 caracteres)</label><input name="nueva" type="password" minlength="8" required autocomplete="new-password">
+<label>Repite la clave nueva</label><input name="repetir" type="password" minlength="8" required autocomplete="new-password"><br><br>
+<button class="btn">Guardar mi clave</button></form>
+{% endblock %}

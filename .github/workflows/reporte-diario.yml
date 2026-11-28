@@ -1,0 +1,14 @@
+name: Reporte diario por correo
+on:
+  schedule:
+    - cron: "0 12 * * *"   # 12:00 UTC = 7:00 a. m. hora de Lima
+  workflow_dispatch: {}     # permite ejecutarlo a mano desde la pestaña Actions
+jobs:
+  enviar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Llamar a la app para que envíe el reporte
+        run: |
+          curl --fail-with-body --retry 3 --retry-delay 30 --max-time 180 \
+            -X POST "${{ secrets.APP_URL }}/reportes/enviar" \
+            -H "X-Report-Token: ${{ secrets.REPORT_TOKEN }}"

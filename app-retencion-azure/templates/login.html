@@ -1,0 +1,4 @@
+{% extends "base.html" %}{% block c %}
+<h2>Iniciar sesión</h2>
+<form method="post" style="max-width:320px"><input type="hidden" name="_csrf" value="{{ csrf() }}"><input type="hidden" name="next" value="{{ sig }}"><label>Usuario</label><input name="u" required autofocus><label>Clave</label><input name="c" type="password" required><br><br><button class="btn">Entrar</button></form><p style="margin-top:22px"><a href="{{ url_for('invitado') }}">👀 Soy invitado: solicitar acceso para ver el dashboard</a></p>
+{% endblock %}

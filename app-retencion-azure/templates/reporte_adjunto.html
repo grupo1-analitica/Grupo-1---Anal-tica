@@ -1,0 +1,25 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reporte interactivo G1 · {{ r.hoy.strftime('%d/%m/%Y') }}</title>
+<style>body{font-family:Segoe UI,Arial,sans-serif;background:#eef2f8;margin:0;color:#1c2733}header{background:linear-gradient(90deg,#0b3d6b,#1f7aec);color:#fff;padding:22px 28px}
+main{max-width:1100px;margin:22px auto;padding:0 16px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:18px}
+.kpi,.graf{background:#fff;border-radius:14px;padding:16px;box-shadow:0 2px 8px #0b3d6b14}.kpi b{display:block;font-size:28px;color:#0b3d6b}.kpi small{color:#5b6b7c}.d{font-size:12px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:16px}@media(max-width:480px){.grid2{grid-template-columns:1fr}}</style></head><body>
+<header><h2 style="margin:0">📡 Reporte interactivo de retención · Grupo 1</h2><div>{{ r.hoy.strftime('%d/%m/%Y') }} · pasa el mouse sobre los gráficos</div></header><main>
+<p><b>Resumen:</b> {{ resumen }}</p>
+{% set k=r.k %}{% set dl=r.delta %}
+<div class="cards">
+{% for t,v,c,m in [('Clientes',k.clientes,'clientes',0),('Contratos activos',k.activos,'activos',0),('Cancelados',k.cancelados,'cancelados',1),('Tasa de cancelación',k.tasa~'%','tasa',1),('Intervenciones',k.intervenciones,'intervenciones',0),('Calificación prom.',k.calificacion,'calificacion',0)] %}
+<div class="kpi"><small>{{ t }}</small><b>{{ v }}</b>{% if dl[c] %}<span class="d" style="color:{{ '#e5484d' if (dl[c]>0)==(m==1) else '#2fb67c' }}">{{ '▲' if dl[c]>0 else '▼' }} {{ dl[c]|abs }}</span>{% endif %}</div>{% endfor %}</div>
+<div class="grid2">
+<div class="graf"><h3>Tendencia tasa de cancelación (%)</h3><canvas id="g0"></canvas></div>
+<div class="graf"><h3>Bajas por motivo</h3><canvas id="g1"></canvas></div>
+<div class="graf"><h3>Intervenciones por resultado</h3><canvas id="g2"></canvas></div>
+<div class="graf"><h3>Intervenciones por canal</h3><canvas id="g3"></canvas></div>
+<div class="graf"><h3>Bajas por mes</h3><canvas id="g4"></canvas></div></div>
+{% if r.vig %}<h3>Contratos activos a vigilar</h3><ul>{% for v in r.vig %}<li>Contrato #{{ v.contrato_id }} · {{ v.nombre }} — {{ v.n }} intervenciones sin retención</li>{% endfor %}</ul>{% endif %}
+</main>
+{% if chartjs %}<script>{{ chartjs|safe }}</script>{% else %}<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.js"></script>{% endif %}
+<script>
+const D={{ {'t':r.tendencia,'m':r.d.motivos,'r':r.d.resultados,'c':r.d.canales,'s':r.d.meses}|tojson }};
+function g(id,tipo,f,col){new Chart(document.getElementById(id),{type:tipo,data:{labels:f.map(x=>x[0]),datasets:[{data:f.map(x=>x[1]),backgroundColor:col,borderColor:col,tension:.3}]},options:{plugins:{legend:{display:false}}}})}
+g('g0','line',D.t,'#e5484d');g('g1','bar',D.m,'#e5484d');g('g2','bar',D.r,'#1f7aec');g('g3','bar',D.c,'#8e6cf0');g('g4','bar',D.s,'#f5a623');
+</script></body></html>

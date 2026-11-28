@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% block c %}
+<h2>👀 Acceso de invitado</h2>
+<p>Pide permiso para ver el <b>dashboard</b> (solo lectura: no podrás modificar nada). El equipo recibirá un aviso por correo y, cuando lo apruebe, entrarás automáticamente.</p>
+<form method="post" style="max-width:380px"><input type="hidden" name="_csrf" value="{{ csrf() }}">
+<label>Nombre completo</label><input name="nombre" required maxlength="100">
+<label>Correo</label><input name="correo" type="email" required maxlength="150">
+<label>Motivo (opcional)</label><input name="motivo" maxlength="300" placeholder="Ej.: evaluación del curso"><br><br>
+<button class="btn">Solicitar acceso</button> <a href="{{ url_for('login') }}">Volver</a></form>
+{% endblock %}

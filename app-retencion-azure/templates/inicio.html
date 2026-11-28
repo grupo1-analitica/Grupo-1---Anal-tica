@@ -1,0 +1,5 @@
+{% extends "base.html" %}{% block c %}
+<h2>¿Qué quieres hacer?</h2>
+<div class="cards">{% if dash %}<a class="card" href="{{ url_for('dashboard') }}"><span>📊</span>Dashboard</a>{% endif %}
+{% for k, e in ENT.items() %}<a class="card" href="{{ url_for('lista', ent=k) }}"><span>{{ {'intervenciones':'📞','contratos':'📄','clientes':'👥','agentes':'🎧','planes':'📦'}[k] }}</span>{{ e.t }}</a>{% endfor %}{% if session.rol == 'administrador' %}<a class="card" href="{{ url_for('usuarios') }}"><span>🔐</span>Usuarios</a>{% endif %}</div>
+{% endblock %}

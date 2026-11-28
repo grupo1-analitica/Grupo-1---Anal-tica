@@ -1,0 +1,10 @@
+{% extends "base.html" %}{% block c %}
+<h2>{{ 'Editar' if id else 'Nuevo' }} usuario</h2>
+<form method="post" style="max-width:420px"><input type="hidden" name="_csrf" value="{{ csrf() }}">
+<label>Usuario *</label><input name="usuario" value="{{ d.get('usuario') or '' }}" required>
+<label>Nombre *</label><input name="nombre" value="{{ d.get('nombre') or '' }}" required>
+<label>Correo</label><input name="correo" type="email" value="{{ d.get('correo') or '' }}">
+<label>Rol *</label><select name="rol">{% for r in roles %}<option value="{{ r }}" {{ 'selected' if d.get('rol') == r }}>{{ r }}</option>{% endfor %}</select>
+<label>Clave {{ '(déjala vacía para no cambiarla)' if id else '* (mínimo 8 caracteres)' }}</label><input name="clave" type="password" autocomplete="new-password">
+<label><input type="checkbox" name="activo" style="width:auto" {{ 'checked' if d.get('activo') }}> Activo</label>
+<br><button class="btn">Guardar</button> <a class="btn rojo" href="{{ url_for('usuarios') }}">Cancelar</a></form>{% endblock %}

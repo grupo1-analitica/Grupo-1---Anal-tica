@@ -1,0 +1,11 @@
+{% extends "base.html" %}{% block c %}
+<h2>{{ 'Editar' if id else 'Nuevo' }} · {{ e.t }}</h2>
+<form method="post" style="max-width:480px"><input type="hidden" name="_csrf" value="{{ csrf() }}">
+{% for c in e.campos %}<label>{{ c.l }}{% if c.req %} *{% endif %}</label>
+{% if c.t == 'sel' %}<select name="{{ c.n }}" {% if c.req %}required{% endif %}><option value="">-- elegir --</option>
+{% for v, l in opts[c.n] %}<option value="{{ v }}" {{ 'selected' if datos.get(c.n)|string == v|string }}>{{ l }}</option>{% endfor %}</select>
+{% else %}<input name="{{ c.n }}" type="{{ {'int':'number','num':'number','date':'date','time':'time','text':'text'}[c.t] }}" {% if c.req %}required{% endif %}
+{% if c.t == 'num' %}step="0.01" min="0"{% endif %}{% if c.max %} maxlength="{{ c.max }}"{% endif %}
+value="{{ (datos.get(c.n)|string)[:5] if c.t == 'time' and datos.get(c.n) else (datos.get(c.n) if datos.get(c.n) is not none else '') }}">{% endif %}
+{% endfor %}<br><br><button class="btn">Guardar</button> <a class="btn rojo" href="{{ url_for('lista', ent=ent) }}">Cancelar</a> <a class="btn" href="{{ url_for('inicio') }}">Inicio</a>
+</form>{% endblock %}

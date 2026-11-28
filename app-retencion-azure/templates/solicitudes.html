@@ -1,0 +1,9 @@
+{% extends "base.html" %}{% block c %}
+<h2>🔔 Solicitudes de invitados</h2>
+<p>Al aprobar, la persona verá solo el dashboard durante 4 horas. Las solicitudes vencen a los {{ validez }} minutos. Apruébalas solo si reconoces a la persona.</p>
+<table><tr><th>Hora (Lima)</th><th>Nombre</th><th>Correo</th><th>Motivo</th><th>Estado</th><th></th></tr>
+{% for r in rows %}<tr><td>{{ r.hora }}</td><td>{{ r.nombre }}</td><td>{{ r.correo }}</td><td>{{ r.motivo or '' }}</td><td>{{ 'vencida' if r.vencida else r.estado }}</td><td>
+{% if r.estado == 'pendiente' and not r.vencida %}<form class="inline" method="post" action="{{ url_for('solicitud_resolver', id=r.solicitud_id, accion='aprobar') }}"><input type="hidden" name="_csrf" value="{{ csrf() }}"><button class="btn">✅ Aprobar</button></form>
+<form class="inline" method="post" action="{{ url_for('solicitud_resolver', id=r.solicitud_id, accion='rechazar') }}"><input type="hidden" name="_csrf" value="{{ csrf() }}"><button class="btn rojo">Rechazar</button></form>{% endif %}</td></tr>
+{% else %}<tr><td colspan="6">Sin solicitudes.</td></tr>{% endfor %}</table>
+{% endblock %}
